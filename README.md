@@ -1,11 +1,11 @@
 # template-with-angular-and-nodejs
 A template that incorporate angular, bootstrap, ui-codemirror, code beautifier, ng-resource, ui-router, and nodejs as backend
 
-To use this
-1. npm install (install all dependencies)
-2. python -m SimpleHTTPServer 8080 (in frontend folder)
-3. node index.js (in backend folder)
-4. open a browser, go to http://localhost:8080
+##To use this
+* npm install (install all dependencies)
+* python -m SimpleHTTPServer 8080 (in frontend folder)
+* node index.js (in backend folder)
+* open a browser, go to http://localhost:8080
 
 
 Note:
