@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Gengwu Li">
+    <meta name="view-port" content="width=device-width, initial-scale=1">
+    <!-- Import prismjs dependencies you must specify the function you want from http://prismjs.com/download.html-->
+    <!-- here I added highlight and linenumbers to default and select java as additional language -->
+    <link rel="stylesheet" type="text/css" href="css/prism.css" />
+    <script src="js/prism.js"></script>
+    <!-- Import bootstrap css, no boostrap js cuz we use ui bootstrap -->
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Import angular 1 -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <!-- Import angular resource for interacting with backend -->
+    <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+    <!-- Import angular animate for animation -->
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <!-- Import ui bootstrap -->
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <!-- Import ui router -->
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!-- Import codemirror xml.js is for different effects, clike.js is for different mode if you want to use 'java'-->
+    <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css" />
+    <link rel="stylesheet" href="node_modules/codemirror/theme/eclipse.css" />
+    <script src="node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="node_modules/codemirror/mode/javascript/javascript.js"></script>
+    <script src="node_modules/codemirror/mode/xml/xml.js"></script>
+    <script src="node_modules/codemirror/mode/clike/clike.js"></script>
+    <script src="node_modules/angular-ui-codemirror/src/ui-codemirror.js"></script>
+    <!-- User defined js files -->
+    <script src="app.module.js"></script>
+    <script src="app/api.service.js"></script>
+    <script src="app/state1.js"></script>
+    <script src="app/state2.js"></script>
+    <!-- title -->
+    <title>template</title>
+</head>
+
+<body ng-app='app'>
+    <nav class="navbar navbar-inverse">
+        <div class="">
+            <!-- don't use container, or it will overflow horizontally -->
+            <a class="navbar-brand" href="#">navbrand</a>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Link1</a>
+                </li>
+                <li>
+                    <a href="#">Link2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- below I have a container holding the side bar and ui-view -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <div ng-include="'app/sidebar.html'">
+                    <!-- sidebar shortened to sidebar.html -->
+                </div>
+            </div>
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                <div ui-view></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

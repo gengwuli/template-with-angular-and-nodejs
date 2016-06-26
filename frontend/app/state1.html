@@ -1,0 +1,6 @@
+<!-- line-numbers show line number and data-line highlight certain line -->
+<!-- original prism won't work in ui-view so must creat a directive for it to work -->
+<!-- <pre ng-prism  class="line-numbers" data-line="2"><code class="language-java"></code></pre> -->
+<div ng-prism>
+    <pre><code class="language-java"><span ng-bind-html="kmp | unsafe"></span></code></pre>
+</div>
