@@ -9,7 +9,7 @@ A template that incorporate angular, bootstrap, ui-codemirror, code beautifier, 
 
 
 ## Note:
-1. How to use *ui-codemirror*? (Remember to add dependency to angular module ui.codemirror)
+1. How to use **ui-codemirror**? (Remember to add dependency to angular module ui.codemirror)
 	* Include one by one
 		* codemirror/lib/codemirror.css,  
 		* codemirror/theme/eclipse.css, 
@@ -20,9 +20,11 @@ A template that incorporate angular, bootstrap, ui-codemirror, code beautifier, 
 	> (xml.js is for different effects, clike.js is for different mode if you want to use 'java' as the mode)
 	    
 	* Add following tag to html file
-	`<ui-codemirror ui-codemirror-opts="editorOptions" ng-model="model"></ui-codemirror>`
+	```html
+	<ui-codemirror ui-codemirror-opts="editorOptions" ng-model="model"></ui-codemirror>
+	```
 	  
-	* Config options in controller (Either in $scope.editorOptions or vm.editorOption)
+	* Configure options in controller (Either in $scope.editorOptions or vm.editorOption)
 	```javascript
 	      editorOptions = {
 	          lineWrapping: true,
@@ -33,7 +35,7 @@ A template that incorporate angular, bootstrap, ui-codemirror, code beautifier, 
 	      }
 	```
 
-2. How to use *prismjs* in ui-view
+2. How to use **prismjs** in ui-view
 	* Customize your prismjs at [prism](http://prismjs.com/download.html)
 	
 	* Add prism.js and prism.css to index.html
@@ -62,8 +64,8 @@ A template that incorporate angular, bootstrap, ui-codemirror, code beautifier, 
 	</div>
 	```
       
-3. How to use *ui-router*? (remember to add ui-router to module)
-	* Config ui-router in module
+3. How to use **ui-router**? (remember to add ui-router to module)
+	* Configure ui-router in module
 	```javascript
 	config.$inject = ['$stateProvider', '$urlRouterProvider']
 	    function config($stateProvider, $urlRouterProvider) {
@@ -83,7 +85,7 @@ A template that incorporate angular, bootstrap, ui-codemirror, code beautifier, 
 	    })
 	}
 	```
-	* Add *ui-sref* to a tag
+	* Add **ui-sref** to a tag
 	```html
 	<a href="#" ui-sref="state1">link2(go to state1 which is shown in url)</a>
 	```
