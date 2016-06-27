@@ -26,13 +26,13 @@ A template that incorporate angular, bootstrap, ui-codemirror, code beautifier, 
 	  
 	* Configure options in controller (Either in $scope.editorOptions or vm.editorOption)
 	```javascript
-	      editorOptions = {
-	          lineWrapping: true,
-	          theme: 'eclipse',
-	          mode: 'text/x-java',
-	          matchBrackets: true,
-	          htmlMode: true
-	      }
+      editorOptions = {
+          lineWrapping: true,
+          theme: 'eclipse',
+          mode: 'text/x-java',
+          matchBrackets: true,
+          htmlMode: true
+      }
 	```
 
 2. How to use **prismjs** in ui-view
