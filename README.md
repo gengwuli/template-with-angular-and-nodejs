@@ -16,7 +16,7 @@ A template that incorporate angular, bootstrap, ui-codemirror, code beautifier, 
 		* codemirror/lib/codemirror.js,
 		* codemirror/mode/javascript/javascript.js, 
 		* codemirror/mode/clike/clike.js, 
-		* angular-ui-codemirror/ui-codemirror.js; \<br>
+		* angular-ui-codemirror/ui-codemirror.js;   
 		` (xml.js is for different effects, clike.js is for different mode if you want to use 'java' as the mode)`
 	    
 	* Add following tag to html file
