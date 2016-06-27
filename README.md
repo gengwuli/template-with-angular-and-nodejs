@@ -16,8 +16,8 @@ A template that incorporate angular, bootstrap, ui-codemirror, code beautifier, 
 		* codemirror/lib/codemirror.js,
 		* codemirror/mode/javascript/javascript.js, 
 		* codemirror/mode/clike/clike.js, 
-		* angular-ui-codemirror/ui-codemirror.js; 
-	> (xml.js is for different effects, clike.js is for different mode if you want to use 'java' as the mode)
+		* angular-ui-codemirror/ui-codemirror.js; \<br>
+		` (xml.js is for different effects, clike.js is for different mode if you want to use 'java' as the mode)`
 	    
 	* Add following tag to html file
 	```html
@@ -58,7 +58,7 @@ A template that incorporate angular, bootstrap, ui-codemirror, code beautifier, 
 	}])
 	```
 	* Add tag to file (line-numbers are showing line number and data-line highlight which line, specify when downloading)
-	```
+	```html
 	<div ng-prism>
 	  <pre class="line-numbers" data-line="2"><code class="language-java"><span ng-bind-html="kmp | unsafe"></span></code></pre>
 	</div>
